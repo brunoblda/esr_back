@@ -4,8 +4,10 @@ from firebase_admin import firestore
 import contador
 import auth_layer.jwt_class as auth_class
 import utils
+import os
 
-cred = credentials.Certificate("bd_layer\service_key.json")
+#cred = credentials.Certificate("bd_layer\service_key.json")
+cred = credentials.Certificate(os.environ.get("service_key"))
 firebase_admin.initialize_app(cred)
 
 db=firestore.client()
