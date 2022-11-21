@@ -7,7 +7,6 @@ from getpass import getpass
 import datetime
 import numpy as np
 import json
-import result_to_csv as to_csv
 
 from setuptools import PEP420PackageFinder
 
@@ -880,6 +879,6 @@ if __name__ == '__main__':
 
     result_unic = execute(tarefa, dias_feriado, auth_user, usuarios_da_fabrica )
 
-    to_csv.result_to_csv([tarefa], [result_unic])
+    #to_csv.result_to_csv([tarefa], [result_unic])
     
     #json_object = json.dumps(dicionario_deconding, indent=4, ensure_ascii=False)

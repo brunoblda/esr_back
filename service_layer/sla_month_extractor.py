@@ -1,7 +1,6 @@
 import requests
 import json
 import contador
-import result_to_csv as to_csv
 import utils
 
 class Sla_month_extrator():
